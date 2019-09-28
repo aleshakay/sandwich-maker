@@ -23,17 +23,15 @@ const createFinalOrder = (items) => {
   
 const createTotalPrice = (prices) => {
     let allPrices = 0;
-    domString3 = '';
+    let domString3 = '';
     for(let i = 0; i < prices.length; i++){
       allPrices += (prices[i].price)  
-      domString3 += `<div class "container-fluid">
+    }
+    domString3 = `<div class "container-fluid">
                     <div class= "row">
-                    <p>"allPrices"</p>
+                    <p>${allPrices}</p>
                     </div>
                     </div>`
-
-    }
-
     utilities.printToDom('total-order', domString3)
 }
    
@@ -51,7 +49,7 @@ const createOrderEvent = () => {
 const printOrderButton = () => {
    const domString = '<div class="container"><div class="row"><button id="sandwich-button" class="btn btn-secondary"> Make Pizza</button></div></div> ' 
     utilities.printToDom('final-order', domString)
-    utilities.printToDom('total-order', domString)
+    
     document.getElementById('sandwich-button').addEventListener('click',createOrderEvent)
 };
 
