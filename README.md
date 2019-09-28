@@ -5,7 +5,7 @@ Use this application to select sandwich toppings and get a final cost for your s
 
 ## Screenshots
 
-
+![Main View](https://raw.githubusercontent.com/aleshakay/sandwich-maker/master/screenshots/Screen%20Shot%202019-09-28%20at%2013.41.03.png
 
 ## How to run
 * Clone this project 
