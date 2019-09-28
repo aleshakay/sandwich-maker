@@ -5,6 +5,7 @@ import cheese from './components/cheese.js';
 import meat from './components/meat.js';
 import condiments from './components/condiments.js';
 import veggies from './components/veggies.js';
+import sandwich from './components/sandwich.js'
 
 const init = () => {
     bread.printBreadOptions();
@@ -12,6 +13,7 @@ const init = () => {
     cheese.printCheeseOptions();
     veggies.printVeggieOptions();
     condiments.printCondimentOptions();
+    sandwich.printOrderButton();
 };
 
 init();

@@ -11,7 +11,7 @@ const meats = [
   const getSelectedMeats = () => {
     const selectedMeats = [];
     // get all meat checkboxes
-    const meatsCheckboxes = document.getElementsByClassName('meat');
+    const meatCheckboxes = document.getElementsByClassName('meat');
   
     // keep the checked ones in a new array
     for(let j = 0; j < meatCheckboxes.length; j++){
