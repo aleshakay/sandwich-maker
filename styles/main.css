@@ -23,4 +23,19 @@ body{
 #sandmichBtn.row{
     justify-content: center;
     text-align: center;
+    border-block: 1em;
 }
+#sandmichTot.row{
+    justify-content: center;
+    text-align: center;
+}
+
+.col-md{
+    
+    text-align: end;
+}
+
+h2 {
+    text-decoration: underline;
+  }
+

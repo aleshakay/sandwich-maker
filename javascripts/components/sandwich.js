@@ -6,14 +6,16 @@ import veggie from './veggies.js';
 import utilities from '../helpers/utilities.js'
 
 const createFinalOrder = (items) => {
-    let domString2 = '';
+    let domString2 = '<h2>Sandwich Order</h2>';
     for(let i = 0; i < items.length; i++){
         domString2 += 
-        `<div class= "container-fluid">
+        `<div class="">
+        <div class= "container-fluid">
             <div class= "row">
-            <h2>${items[i].name}</h2>
+            <h3>${items[i].name}</h3>
             <div class= "col-md">
-            <h2>${items[i].price}</h2>
+            <h3>${items[i].price}</h3>
+            </div>
             </div>
             </div>
             </div>`;
@@ -27,11 +29,18 @@ const createTotalPrice = (prices) => {
     for(let i = 0; i < prices.length; i++){
       allPrices += (prices[i].price)  
     }
-    domString3 = `<div class "container-fluid">
-                    <div class= "row">
-                    <p>${allPrices}</p>
+    domString3 = `<div id="pricesline" class= "d-flex justify-content-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-">
+                                <h2>Total</h2>
+                            </div>
+                            <div class="col-">
+                                <p class="totalLine">:${allPrices}</p>
+                            </div>
+                        </div>
                     </div>
-                    </div>`
+                </div>`
     utilities.printToDom('total-order', domString3)
 }
    
@@ -47,7 +56,7 @@ const createOrderEvent = () => {
 
 }
 const printOrderButton = () => {
-   const domString = '<div class="container"><div class="row"><button id="sandwich-button" class="btn btn-secondary"> Make Pizza</button></div></div> ' 
+   const domString = '<div class="container"><div class="row"><button id="sandwich-button" class="btn btn-secondary"> Make Sandwich</button></div></div> ' 
     utilities.printToDom('final-order', domString)
     
     document.getElementById('sandwich-button').addEventListener('click',createOrderEvent)
