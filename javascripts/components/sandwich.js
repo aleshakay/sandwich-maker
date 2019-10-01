@@ -27,7 +27,8 @@ const createTotalPrice = (prices) => {
     let allPrices = 0;
     let domString3 = '';
     for(let i = 0; i < prices.length; i++){
-      allPrices += (prices[i].price)  
+      allPrices += (prices[i].price/ 100)
+
     }
     domString3 = `<div id="pricesline" class= "d-flex justify-content-center">
                     <div class="container-fluid">
@@ -36,7 +37,7 @@ const createTotalPrice = (prices) => {
                                 <h2>Total</h2>
                             </div>
                             <div class="col-">
-                                <p class="totalLine">:${allPrices}</p>
+                                <p class="totalLine">:$${allPrices}</p>
                             </div>
                         </div>
                     </div>
