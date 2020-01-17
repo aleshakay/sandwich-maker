@@ -1,11 +1,11 @@
 console.log('Sandwich Maker');
 
-import bread from './components/bread.js.js'
-import cheese from './components/cheese.js.js';
-import meat from './components/meat.js.js';
-import condiments from './components/condiments.js.js';
-import veggies from './components/veggies.js.js';
-import sandwich from './components/sandwich.js.js'
+import bread from './components/bread.js'
+import cheese from './components/cheese.js';
+import meat from './components/meat.js';
+import condiments from './components/condiments.js';
+import veggies from './components/veggies.js';
+import sandwich from './components/sandwich.js'
 
 const init = () => {
     bread.printBreadOptions();

@@ -1,4 +1,4 @@
-import utilities from '../helpers/utilities.js.js';
+import utilities from '../helpers/utilities.js';
 
 const meats = [
     {id: "meat1", name: "Ham", price: 140 },

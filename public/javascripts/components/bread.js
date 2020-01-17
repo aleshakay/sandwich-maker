@@ -1,4 +1,4 @@
-import utilities from '../helpers/utilities.js.js';
+import utilities from '../helpers/utilities.js';
 
 const breads = [
     {id: "bread1", name: "Wheat", price: 200 },
