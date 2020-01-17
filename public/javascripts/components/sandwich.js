@@ -1,9 +1,9 @@
-import bread from './bread.js'
-import cheese from './cheese.js';
-import meat from './meat.js';
-import condiments from './condiments.js';
-import veggie from './veggies.js';
-import utilities from '../helpers/utilities.js'
+import bread from './bread.js.js'
+import cheese from './cheese.js.js';
+import meat from './meat.js.js';
+import condiments from './condiments.js.js';
+import veggie from './veggies.js.js';
+import utilities from '../helpers/utilities.js.js'
 
 const createFinalOrder = (items) => {
     let domString2 = '<h2>Sandwich Order</h2>';
